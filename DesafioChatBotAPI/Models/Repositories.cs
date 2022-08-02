@@ -2,17 +2,17 @@
 {
     public class Repositories
     {
-        public String Name { get; set; }
-        public String Description { get; set; }
-        public String Language { get; set; }
-        public String Creation_Date { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public string Language { get; set; }
+        public string Created_At { get; set; }
 
-        public Repositories(string name, string description, string language, string creation_date)
+        public Repositories(string name, string description, string language, string created_At)
         {
             Name = name;
             Description = description;
             Language = language;
-            Creation_Date = creation_date;
+            Created_At = created_At;
         }
     }
 }

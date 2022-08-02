@@ -42,7 +42,7 @@ namespace DesafioChatBotAPI.Services
         {
             try
             {
-                var specificRepositories = GetAllRepositoriesAsync().Result.FindAll(x => x.Language == language).OrderBy(x => x.Creation_Date).ToList();
+                var specificRepositories = GetAllRepositoriesAsync().Result.FindAll(x => x.Language == language).OrderBy(x => x.Created_At).ToList();
 
                 List<Repositories> repositoriesList = new List<Repositories>();
 
